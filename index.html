@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="./assets/icon.png" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -23,8 +24,37 @@
           <a><img src="./assets/user.png" alt=""/></a>
           <div class="profile__options">
             <div class="profile-options__container">
-              <a href="">Cuenta</a>
-              <a href="">Cerrar sesión</a>
+              <header class="profile__header">
+                <img src="./assets/user.png" alt="" />
+                <p class="profile__header--name">
+                  Tatiana Paola Rodríguez Pacheco
+                </p>
+                <p class="profile__header--email">
+                  tatianarodriguezpacheco@gmail.com
+                </p>
+                <input
+                  class="profile__header--input"
+                  type="text"
+                  value="Gestionar tu cuenta de Google"
+                />
+              </header>
+              <main class="profile__main">
+                <div class="profile__main--item">
+                  <img src="./assets/user.png" alt="" />
+                  <div class="profile-main__item--info">
+                    <p class="profile-main__item--name">Tatiana Rodríguez</p>
+                    <p class="profile-main__item--email">
+                      trodriguez@gmail.com
+                    </p>
+                  </div>
+                </div>
+                <div class="profile__main--item">
+                  <img class="profile__main--icon" src="./assets/add_account.png" alt="" />
+                  <div class="profile-main__item--info">
+                    <p class="profile-main__item--name">Añadir otra cuenta</p>
+                  </div>
+                </div>
+              </main>
             </div>
           </div>
         </div>
@@ -32,7 +62,15 @@
     </header>
     <main class="main">
       <img src="./assets/logo.png" alt="" />
-      <input class="main__input" type="text" />
+      <div class="main__search">
+        <img class="main__search--icon" src="./assets/search.png" alt="" />
+        <input class="main__search--input" type="text" />
+        <img
+          class="main__search--icon main__search--voince"
+          src="./assets/voice.png"
+          alt=""
+        />
+      </div>
       <div class="main__buttons">
         <input
           class="main__buttons--options"
@@ -55,15 +93,15 @@
       <div class="footer__country"><p>Colombia</p></div>
       <div class="footer__links">
         <ul>
-          <li>Publicidad</li>
-          <li>Negocios</li>
-          <li>Sobre Google</li>
-          <li>Cómo funciona la Búsqueda</li>
+          <li><a href="">Publicidad</a></li>
+          <li><a href="">Negocios</a></li>
+          <li><a href="">Sobre Google</a></li>
+          <li><a href="">Cómo funciona la Búsqueda</a></li>
         </ul>
         <ul>
-          <li>Privacidad</li>
-          <li>Condiciones</li>
-          <li>Preferencias</li>
+          <li><a href="">Privacidad</a></li>
+          <li><a href="">Condiciones</a></li>
+          <li><a href="">Preferencias</a></li>
         </ul>
       </div>
     </footer>
