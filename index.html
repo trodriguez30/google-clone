@@ -15,46 +15,67 @@
   <body>
     <header class="header">
       <nav class="header__menu">
-        <div class="header__menu--item"><a>Gmail</a></div>
-        <div class="header__menu--item"><a>Imágenes</a></div>
-        <div class="header__menu--item">
-          <img src="./assets/grid.png" alt="" />
+        <div class="header__menu-item">
+          <a class="header__menu-enlace">Gmail</a>
         </div>
-        <div class="header__menu--item header__menu--profile">
-          <a><img src="./assets/user.png" alt=""/></a>
-          <div class="profile__options">
+        <div class="header__menu-item">
+          <a class="header__menu-enlace">Imágenes</a>
+        </div>
+        <div class="header__menu-item">
+          <img class="header__menu-grid" src="./assets/grid.png" alt="" />
+        </div>
+        <div class="header__menu-item header__menu-profile">
+          <a class="header__menu-enlace"
+            ><img class="header__menu-img" src="./assets/user.png" alt=""
+          /></a>
+          <div class="profile-options">
             <div class="profile-options__container">
-              <header class="profile__header">
-                <img src="./assets/user.png" alt="" />
-                <p class="profile__header--name">
+              <header class="profile-options__header">
+                <img
+                  class="profile-header__img"
+                  src="./assets/user.png"
+                  alt=""
+                />
+                <p class="profile-header__name">
                   Tatiana Paola Rodríguez Pacheco
                 </p>
-                <p class="profile__header--email">
+                <p class="profile-header__email">
                   tatianarodriguezpacheco@gmail.com
                 </p>
                 <input
-                  class="profile__header--input"
+                  class="profile-header__input"
                   type="text"
                   value="Gestionar tu cuenta de Google"
                 />
               </header>
-              <main class="profile__main">
-                <div class="profile__main--item">
-                  <img src="./assets/user.png" alt="" />
-                  <div class="profile-main__item--info">
-                    <p class="profile-main__item--name">Tatiana Rodríguez</p>
-                    <p class="profile-main__item--email">
+              <main class="profile-main">
+                <div class="profile-main__item">
+                  <img
+                    class="profile-main__item-img"
+                    src="./assets/user.png"
+                    alt=""
+                  />
+                  <div class="profile-main__item-info">
+                    <p class="profile-main__item-name">Tatiana Rodríguez</p>
+                    <p class="profile-main__item-email">
                       trodriguez@gmail.com
                     </p>
                   </div>
                 </div>
-                <div class="profile__main--item">
-                  <img class="profile__main--icon" src="./assets/add_account.png" alt="" />
-                  <div class="profile-main__item--info">
-                    <p class="profile-main__item--name">Añadir otra cuenta</p>
+                <div class="profile-main__item">
+                  <img
+                    class="profile-main__item-icon"
+                    src="./assets/add_account.png"
+                    alt=""
+                  />
+                  <div class="profile-main__item-info">
+                    <p class="profile-main__item-name">Añadir otra cuenta</p>
                   </div>
                 </div>
               </main>
+              <footer class="profile-footer">
+                <div class="profile-footer__button"></div>
+              </footer>
             </div>
           </div>
         </div>
@@ -62,46 +83,48 @@
     </header>
     <main class="main">
       <img src="./assets/logo.png" alt="" />
-      <div class="main__search">
-        <img class="main__search--icon" src="./assets/search.png" alt="" />
-        <input class="main__search--input" type="text" />
+      <div class="main-search">
+        <img class="main-search_icon" src="./assets/search.png" alt="" />
+        <input class="main-search__input" type="text" />
         <img
-          class="main__search--icon main__search--voince"
+          class="main-search__icon main-search__voince"
           src="./assets/voice.png"
           alt=""
         />
       </div>
-      <div class="main__buttons">
+      <div class="main-buttons">
         <input
-          class="main__buttons--options"
+          class="main-buttons__options"
           type="button"
           value="Buscar con Google"
         />
         <input
-          class="main__buttons--options"
+          class="main-buttons__options"
           type="button"
           value="Me siento con suerte"
         />
       </div>
-      <div class="main__languages">
+      <div class="main-languages">
         <p>Ofrecido por Google en:</p>
-        <a class="main__languages--link" href="">English Español</a>
-        <a class="main__languages--link" href="">(Latinoamérica)</a>
+        <a class="main-languages__link" href="">English Español</a>
+        <a class="main-languages__link" href="">(Latinoamérica)</a>
       </div>
     </main>
     <footer class="footer">
       <div class="footer__country"><p>Colombia</p></div>
-      <div class="footer__links">
+      <div class="footer-links">
         <ul>
-          <li><a href="">Publicidad</a></li>
-          <li><a href="">Negocios</a></li>
-          <li><a href="">Sobre Google</a></li>
-          <li><a href="">Cómo funciona la Búsqueda</a></li>
+          <li class="footer-links__item"><a href="">Publicidad</a></li>
+          <li class="footer-links__item"><a href="">Negocios</a></li>
+          <li class="footer-links__item"><a href="">Sobre Google</a></li>
+          <li class="footer-links__item">
+            <a href="">Cómo funciona la Búsqueda</a>
+          </li>
         </ul>
         <ul>
-          <li><a href="">Privacidad</a></li>
-          <li><a href="">Condiciones</a></li>
-          <li><a href="">Preferencias</a></li>
+          <li class="footer-links__item"><a href="">Privacidad</a></li>
+          <li class="footer-links__item"><a href="">Condiciones</a></li>
+          <li class="footer-links__item"><a href="">Preferencias</a></li>
         </ul>
       </div>
     </footer>
